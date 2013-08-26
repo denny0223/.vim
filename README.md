@@ -4,15 +4,15 @@ Denny's vimrc
 How to use?
 ---
 
-backup your origin `.vimrc` and `.vim` settings.
+Backup your original `.vimrc` and `.vim` settings.
 
-in home directory
+In home directory, 
 
 ```
 git clone https://github.com/denny0223/.vim.git && ln -s .vim/.vimrc
 ```
 
-use vim open any file, vim plugin will auto install.
+use vim to open any file, vim plugin will be automatically installed.
 
 Plugin List
 ---
