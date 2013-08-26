@@ -17,9 +17,10 @@ use vim open any file, vim plugin will auto install.
 
 Plugin List
 ---
-* closetag.vim
-* ctrlp
-* snipmate
-* syntastic
-* vim-easymotion
-* vim-surround
+* **closetag**
+* **ctrlp**
+* **NeoBundle** -- Vim plugin manager
+* **snipmate**
+* **syntastic**
+* **vim-easymotion**
+* **vim-surround**
