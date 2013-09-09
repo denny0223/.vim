@@ -71,3 +71,4 @@ nnoremap <c-l> :nohl<cr>
 let g:closetag_html_style=1
 source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
 
+autocmd BufWritePre * :%s/\s\+$//e
