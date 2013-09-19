@@ -67,7 +67,7 @@ set history=1000
 " map Ctel-L to be nohl, clear search highlight
 nnoremap <c-l> :nohl<cr>
 
-" close tag                                                                     
+" close tag
 let g:closetag_html_style=1
 source ~/.vim/bundle/closetag.vim/plugin/closetag.vim
 
