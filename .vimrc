@@ -66,6 +66,7 @@ set cursorline
 set showcmd
 set history=1000
 set wildmode=longest,list,full
+set wildignorecase
 syntax on
 
 " map Ctel-L to be nohl, clear search highlight
