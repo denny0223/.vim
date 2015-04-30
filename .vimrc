@@ -64,9 +64,11 @@ set ic
 set incsearch
 set cursorline
 set showcmd
+set hlsearch
 set history=1000
 set wildmode=longest,list,full
 set wildignorecase
+set backspace=2
 syntax on
 
 " map Ctel-L to be nohl, clear search highlight
