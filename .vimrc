@@ -34,6 +34,7 @@ NeoBundle 'msanders/snipmate.vim'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'davidhalter/jedi-vim'
 " vim-scripts repos
 NeoBundle 'closetag.vim'
 
