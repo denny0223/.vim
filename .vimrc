@@ -84,3 +84,5 @@ let b:did_ftplugin = 1
 
 autocmd BufWritePre * :%s/\s\+$//e
 autocmd FileType gitcommit setlocal spell
+
+let g:jedi#completions_command = "<leader><Tab>"
