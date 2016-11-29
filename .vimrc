@@ -73,7 +73,7 @@ set wildignorecase
 set backspace=2
 syntax on
 
-" map Ctel-L to be nohl, clear search highlight
+" map Ctrl-L to be nohl, clear search highlight
 nnoremap <c-l> :nohl<cr>
 
 " close tag
