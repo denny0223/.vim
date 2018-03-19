@@ -36,6 +36,7 @@ NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'nvie/vim-flake8'
+NeoBundle 'hotoo/pangu.vim'
 " vim-scripts repos
 NeoBundle 'closetag.vim'
 
