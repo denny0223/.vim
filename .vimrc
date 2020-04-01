@@ -19,6 +19,7 @@ Plug 'tpope/vim-surround'
 Plug 'davidhalter/jedi-vim'
 Plug 'nvie/vim-flake8'
 Plug 'hotoo/pangu.vim'
+Plug 'mileszs/ack.vim'
 
 call plug#end()
 
