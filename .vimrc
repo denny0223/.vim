@@ -13,13 +13,13 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-scripts/closetag.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'msanders/snipmate.vim'
-Plug 'scrooloose/syntastic'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'tpope/vim-surround'
 Plug 'davidhalter/jedi-vim'
 Plug 'nvie/vim-flake8'
 Plug 'hotoo/pangu.vim'
 Plug 'mileszs/ack.vim'
+Plug 'dense-analysis/ale'
 
 call plug#end()
 
