@@ -41,18 +41,17 @@ set wildignorecase
 set backspace=2
 syntax on
 
-" map Ctrl-L to be nohl, clear search highlight
-nnoremap <c-l> :nohl<cr>
+" map Ctrl-L to clear search highlight and redraw the screen
+nnoremap <c-l> :nohlsearch<bar>diffupdate<cr><c-l>
 
 " close tag
 let g:closetag_html_style=1
-source ~/.vim/plugged/closetag.vim/plugin/closetag.vim
 
-" disabling default ftplugins
-let b:did_ftplugin = 1
-
-autocmd BufWritePre * :%s/\s\+$//e
-autocmd FileType gitcommit setlocal spell
+augroup denny_vimrc
+  autocmd!
+  autocmd BufWritePre * %s/\s\+$//e
+  autocmd FileType gitcommit setlocal spell
+augroup END
 let g:copilot_filetypes = {
       \ 'gitcommit': v:true,
       \ }
