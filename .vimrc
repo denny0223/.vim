@@ -12,7 +12,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'alvan/vim-closetag'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'Lokaltog/vim-easymotion'
+Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
 Plug 'davidhalter/jedi-vim'
 Plug 'hotoo/pangu.vim'

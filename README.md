@@ -22,7 +22,7 @@ Plugin List
 ---
 * [**closetag**](https://github.com/alvan/vim-closetag)
 * [**ctrlp**](https://github.com/ctrlpvim/ctrlp.vim)
-* [**vim-easymotion**](https://github.com/Lokaltog/vim-easymotion)
+* [**vim-easymotion**](https://github.com/easymotion/vim-easymotion)
 * [**vim-surround**](https://github.com/tpope/vim-surround)
 * [**jedi-vim**](https://github.com/davidhalter/jedi-vim)
 * [**pangu.vim**](https://github.com/hotoo/pangu.vim)
