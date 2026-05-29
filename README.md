@@ -20,7 +20,7 @@ Plugin Manager
 
 Plugin List
 ---
-* [**closetag**](https://github.com/vim-scripts/closetag.vim)
+* [**closetag**](https://github.com/alvan/vim-closetag)
 * [**ctrlp**](https://github.com/ctrlpvim/ctrlp.vim)
 * [**vim-easymotion**](https://github.com/Lokaltog/vim-easymotion)
 * [**vim-surround**](https://github.com/tpope/vim-surround)

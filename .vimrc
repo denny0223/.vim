@@ -10,7 +10,7 @@ endif
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
-Plug 'vim-scripts/closetag.vim'
+Plug 'alvan/vim-closetag'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'tpope/vim-surround'
@@ -43,7 +43,8 @@ syntax on
 nnoremap <c-l> :nohlsearch<bar>diffupdate<cr><c-l>
 
 " close tag
-let g:closetag_html_style=1
+let g:closetag_filetypes = 'html,xhtml,phtml'
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
 
 augroup denny_vimrc
   autocmd!
