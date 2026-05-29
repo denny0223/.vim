@@ -12,7 +12,7 @@ In home directory,
 git clone https://github.com/denny0223/.vim.git && ln -s .vim/.vimrc
 ```
 
-use vim to open any file, vim plugin will be automatically installed.
+Open vim once to install configured plugins through vim-plug.
 
 Plugin Manager
 ---
@@ -20,9 +20,14 @@ Plugin Manager
 
 Plugin List
 ---
-* [**closetag**](http://www.vim.org/scripts/script.php?script_id=13)
+* [**closetag**](https://github.com/vim-scripts/closetag.vim)
 * [**ctrlp**](https://github.com/kien/ctrlp.vim)
 * [**snipmate**](https://github.com/msanders/snipmate.vim)
-* [**syntastic**](https://github.com/scrooloose/syntastic)
 * [**vim-easymotion**](https://github.com/Lokaltog/vim-easymotion)
 * [**vim-surround**](https://github.com/tpope/vim-surround)
+* [**jedi-vim**](https://github.com/davidhalter/jedi-vim)
+* [**vim-flake8**](https://github.com/nvie/vim-flake8)
+* [**pangu.vim**](https://github.com/hotoo/pangu.vim)
+* [**ack.vim**](https://github.com/mileszs/ack.vim)
+* [**ALE**](https://github.com/dense-analysis/ale)
+* [**copilot.vim**](https://github.com/github/copilot.vim)
