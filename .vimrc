@@ -47,6 +47,13 @@ nnoremap <c-l> :nohlsearch<bar>diffupdate<cr><c-l>
 let g:closetag_filetypes = 'html,xhtml,phtml'
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
 
+" Use fd/fdfind to feed fzf faster file candidates when available.
+if executable('fd')
+  let $FZF_DEFAULT_COMMAND = 'fd --type f --hidden --follow --exclude .git'
+elseif executable('fdfind')
+  let $FZF_DEFAULT_COMMAND = 'fdfind --type f --hidden --follow --exclude .git'
+endif
+
 " fzf owns file navigation and project search.
 nnoremap <silent> <c-p> :Files<cr>
 nnoremap <leader>s :Rg<space>
