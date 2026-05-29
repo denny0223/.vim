@@ -38,6 +38,7 @@ set wildmode=longest,list,full
 set wildignorecase
 set backspace=2
 syntax on
+filetype plugin indent on
 
 " map Ctrl-L to clear search highlight and redraw the screen
 nnoremap <c-l> :nohlsearch<bar>diffupdate<cr><c-l>
