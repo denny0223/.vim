@@ -56,5 +56,4 @@ let g:copilot_filetypes = {
       \ 'gitcommit': v:true,
       \ }
 
-
-" let g:jedi#completions_command = "<leader><Tab>"
+let g:jedi#completions_enabled = 0
