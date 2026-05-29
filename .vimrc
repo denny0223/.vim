@@ -11,12 +11,12 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'alvan/vim-closetag'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
 Plug 'davidhalter/jedi-vim'
 Plug 'hotoo/pangu.vim'
-Plug 'mileszs/ack.vim'
 Plug 'dense-analysis/ale'
 Plug 'github/copilot.vim'
 
@@ -46,6 +46,10 @@ nnoremap <c-l> :nohlsearch<bar>diffupdate<cr><c-l>
 " close tag
 let g:closetag_filetypes = 'html,xhtml,phtml'
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
+
+" fzf owns file navigation and project search.
+nnoremap <silent> <c-p> :Files<cr>
+nnoremap <leader>s :Rg<space>
 
 augroup denny_vimrc
   autocmd!

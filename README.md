@@ -21,11 +21,14 @@ Plugin Manager
 Plugin List
 ---
 * [**closetag**](https://github.com/alvan/vim-closetag)
-* [**ctrlp**](https://github.com/ctrlpvim/ctrlp.vim)
+* [**fzf**](https://github.com/junegunn/fzf)
+* [**fzf.vim**](https://github.com/junegunn/fzf.vim)
 * [**vim-easymotion**](https://github.com/easymotion/vim-easymotion)
 * [**vim-surround**](https://github.com/tpope/vim-surround)
 * [**jedi-vim**](https://github.com/davidhalter/jedi-vim)
 * [**pangu.vim**](https://github.com/hotoo/pangu.vim)
-* [**ack.vim**](https://github.com/mileszs/ack.vim)
 * [**ALE**](https://github.com/dense-analysis/ale)
 * [**copilot.vim**](https://github.com/github/copilot.vim)
+
+`<C-p>` opens fzf `:Files`.
+`<leader>s` uses fzf `:Rg` for project search.
