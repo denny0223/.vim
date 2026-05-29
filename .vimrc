@@ -1,8 +1,22 @@
 " Automatic install vim-plug
+function! s:ShowBootstrapOnboarding() abort
+  call confirm(
+        \ "Vim plugins are installed.\n\n"
+        \ . "For a better experience, you may also want to install these optional system packages:\n\n"
+        \ . "  Fedora:        sudo dnf install ripgrep bat fd-find\n"
+        \ . "  Debian/Ubuntu: sudo apt install ripgrep bat fd-find\n"
+        \ . "  Arch:          sudo pacman -S ripgrep bat fd\n"
+        \ . "  openSUSE:      sudo zypper install ripgrep bat fd\n"
+        \ . "  macOS:         brew install ripgrep bat fd\n\n"
+        \ . "Package names may vary by distribution.",
+        \ "&OK",
+        \ 1)
+endfunction
+
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC | call <SID>ShowBootstrapOnboarding()
 endif
 
 " Specify a directory for plugins
