@@ -20,6 +20,7 @@ Plug 'nvie/vim-flake8'
 Plug 'hotoo/pangu.vim'
 Plug 'mileszs/ack.vim'
 Plug 'dense-analysis/ale'
+Plug 'github/copilot.vim'
 
 call plug#end()
 
@@ -52,5 +53,9 @@ let b:did_ftplugin = 1
 
 autocmd BufWritePre * :%s/\s\+$//e
 autocmd FileType gitcommit setlocal spell
+let g:copilot_filetypes = {
+      \ 'gitcommit': v:true,
+      \ }
+
 
 " let g:jedi#completions_command = "<leader><Tab>"
