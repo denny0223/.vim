@@ -4,4 +4,6 @@ setlocal softtabstop=4
 setlocal expandtab
 setlocal colorcolumn=100
 
-let b:ale_linters = ['flake8']
+let b:ale_linters = ['ruff', 'pyright']
+let b:ale_fixers = ['ruff', 'ruff_format']
+setlocal omnifunc=ale#completion#OmniFunc

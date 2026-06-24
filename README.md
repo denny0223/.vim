@@ -25,10 +25,13 @@ Plugin List
 * [**fzf.vim**](https://github.com/junegunn/fzf.vim)
 * [**vim-easymotion**](https://github.com/easymotion/vim-easymotion)
 * [**vim-surround**](https://github.com/tpope/vim-surround)
-* [**jedi-vim**](https://github.com/davidhalter/jedi-vim)
 * [**pangu.vim**](https://github.com/hotoo/pangu.vim)
 * [**ALE**](https://github.com/dense-analysis/ale)
 * [**copilot.vim**](https://github.com/github/copilot.vim)
 
 `<C-p>` opens fzf `:Files`.
 `<leader>s` uses fzf `:Rg` for project search.
+`gd` uses ALE `:ALEGoToDefinition` when a language server is available.
+
+Python support is provided through ALE. Install `ruff` for linting/fixing and
+`pyright` for language-server features such as go-to-definition and completion.

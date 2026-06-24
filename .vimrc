@@ -19,6 +19,9 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC | call <SID>ShowBootstrapOnboarding()
 endif
 
+" ALE completion must be set before ALE is loaded.
+let g:ale_completion_enabled = 1
+
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
@@ -29,7 +32,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
-Plug 'davidhalter/jedi-vim'
 Plug 'hotoo/pangu.vim'
 Plug 'dense-analysis/ale'
 Plug 'github/copilot.vim'
@@ -72,6 +74,9 @@ endif
 nnoremap <silent> <c-p> :Files<cr>
 nnoremap <leader>s :Rg<space>
 
+" ALE owns language-server actions where a project provides one.
+nmap <silent> gd <Plug>(ale_go_to_definition)
+
 augroup denny_vimrc
   autocmd!
   autocmd BufWritePre * %s/\s\+$//e
@@ -80,5 +85,3 @@ augroup END
 let g:copilot_filetypes = {
       \ 'gitcommit': v:true,
       \ }
-
-let g:jedi#completions_enabled = 0
